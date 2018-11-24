@@ -22,7 +22,6 @@ class NewAddressValidator {
     return validation.isValid() ? success(validation.get()) : failure(validation.getError());
   }
 
-
   private Validation<HasDomainErrors.DomainError, String> validateCountry(String country) {
     return "Molvania".equalsIgnoreCase(country) ?
       invalid(
