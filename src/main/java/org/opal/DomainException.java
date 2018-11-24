@@ -10,5 +10,4 @@ abstract class DomainException extends ResponseStatusException {
   DomainException(HttpStatus status, String reason) {
     super(status, reason);
   }
-
 }
